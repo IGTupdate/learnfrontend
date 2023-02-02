@@ -1,0 +1,147 @@
+[
+    {
+        "title": "HTML",
+        "icon": "bi-1-circle-fill",
+        "childrens": [
+            {
+                "title": "Get Started",
+                "path": "/courseintro"
+            },
+            {
+                "title": "HTML Intro",
+                "path": "/section-1/lesson-1"
+            },
+            {
+                "title": "Practice",
+                "path": "/section-1/lesson-2"
+            },
+            {
+                "title": "Final Project",
+                "path": "/section-1/lesson-3"
+                
+            }
+        ]
+    },
+    {
+        "title": "CSS",
+        "icon": "bi-2-circle-fill",
+        "childrens": [
+            {
+                "title": "CSS Intro",
+                "path": "/section-2/lesson-1"
+            },
+            {
+                "title": "Practice",
+                "path": "/section-2/lesson-2"
+            },
+            {
+                "title": "Portfolio Project",
+                "path": "/section-2/lesson-3"
+            },
+            {
+                "title": "Start Earning Money",
+                "path": "/section-2/lesson-4"
+            }
+        ]
+    },
+    {
+        "title": "JavaScript",
+        "icon": "bi-3-circle-fill",
+        "childrens": [
+            {
+                "title": "Crash Course",
+                "path": "/section-3/lesson-1"
+            },
+            {
+                "title": "JS Challenges",
+                "path": "/section-3/lesson-2"
+            },
+            {
+                "title": "JS Trivia",
+                "path": "/section-3/lesson-3"
+            },
+            {
+                "title": "Promises",
+                "path": "/section-3/lesson-4"
+            }
+        ]
+    },
+    {
+        "title": "React",
+        "icon": "bi-4-circle-fill",
+        "childrens": [
+            {
+                "title": "Introduction",
+                "path": "/section-4/lesson-1"
+            },
+            {
+                "title": "Crash Course",
+                "path": "/section-4/lesson-2"
+            },
+            {
+                "title": "YouTube Clone",
+                "path": "/section-4/lesson-3"
+            },
+            {
+                "title": "Netflix Clone",
+                "path": "/section-4/lesson-4"
+            },
+            {
+                "title": "Amazon Clone",
+                "path": "/section-4/lesson-5"
+            },
+            {
+                "title": "Summary",
+                "path": "/section-4/lesson-6"
+            }
+        ]
+    },
+    {
+        "title": "Job Preparation",
+        "icon": "bi-5-circle-fill",
+        "childrens": [
+            {
+                "title": "Premium Resume",
+                "path": "/section-5/lesson-1"
+            },
+            {
+                "title": "Interview Tips",
+                "path": "/section-5/lesson-2"
+            },
+            {
+                "title": "Applying for Jobs",
+                "path": "/section-5/lesson-3"
+            },
+            {
+                "title": "JS Interview Questions Practice",
+                "path": "/section-5/lesson-4"
+            },
+            {
+                "title": "React Interview Questions Practice",
+                "path": "/section-5/lesson-5"
+            },
+            {
+                "title": "DSA ($100K+)",
+                "path": "/section-5/lesson-6"
+            }
+        ]
+    },
+    {
+        "title": "Account",
+        "icon": "bi-person-circle",
+        "childrens": [
+            {
+                "title": "Create Account",
+                "path": "/auth"
+            },
+            
+            {
+                "title": "Sign In",
+                "path": "/sign-in"
+            }
+           
+        ]
+    }
+    
+    
+]

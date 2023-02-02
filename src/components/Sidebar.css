@@ -1,0 +1,123 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    width: 250px;
+    flex-shrink: 0;
+    background-color: #f5f5f5;
+    height: 100%;
+    overflow: auto;
+    color: #000;
+    padding: 20px;
+    border-right: 1px solid gray;
+    animation: sideAnimation 400ms;
+    transition: all 400ms ease;
+    z-index: 100000;
+}
+
+@keyframes sideAnimation {
+    0% {
+        left: -250px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+.sidebar__item {
+    padding: .75em 1em;
+    transition: all 200ms ease;
+    display: block;
+}
+
+.sidebar__item:hover {
+    background-color: rgb(194, 192, 189);
+}
+
+.sidebar__title {
+    display: flex;
+    font-size: 1.2em;
+    justify-content: space-between;
+    padding: 20px 0;
+    font-weight: bold;
+    cursor: default;
+    transition: all 300ms ease;
+}
+
+.sidebar__title:hover {
+    color: gold;
+}
+
+.sidebar__title span i {
+    display: inline-block;
+    width: 1.5em;
+}
+
+.sidebar__title .toggle__btn {
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.sidebar__content {
+    padding-top: .25em;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sidebar__item.open .sidebar__title .toggle__btn {
+    transform: rotate(180deg);
+}
+
+.sidebar__item.open .sidebar__content {
+    height: auto;
+}
+
+.title__wrapper {
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    margin-top: 14px;
+}
+
+.course__title {
+    text-align: right;
+    letter-spacing: 8px;
+    font-size: 20px;
+    transition: all 200ms ease;
+    cursor: default;
+}
+
+.course__title:hover {
+    color: gold;
+    transform: scale(1.1);
+}
+
+.content__link {
+    margin: 12px 0;
+    font-size: 18px;
+    font-weight: 300;
+    transition: all 200ms ease;
+}
+
+.content__link:hover {
+    color: gold;
+    margin-left: 10px;
+}
+
+.bi-list {
+    font-size: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    z-index: 999999999;
+    cursor: pointer;
+    transition: all 200ms ease;
+    margin-right: 20px;
+}
+
+.bi-list:hover {
+    transform: scale(1.1);
+}

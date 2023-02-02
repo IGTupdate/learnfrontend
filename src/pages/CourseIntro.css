@@ -1,0 +1,21 @@
+.course__intro {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  padding: 20px 12px;
+  justify-content: center;
+}
+
+.course__intro--title {
+    text-align: center;
+    font-size: 40px;
+}
+
+.course__intro--para {
+    font-size: 16px;
+    width: 60%;
+    text-align: center;
+    line-height: 1.5;
+    margin: 20px auto;
+}
+
