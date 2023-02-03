@@ -1,0 +1,33 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #7289d9;
+    width: 100%;
+    text-align: center;
+    height: 30px;
+}
+
+.footer__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.footer__wrapper:hover {
+    transform: scale(1.1);
+}
+
+.footer__text {
+    font-size: 16px;
+    padding: 6px 0;
+    letter-spacing: 1.1px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.discord__logo {
+    width: 28px;
+    margin-right: 12px;
+}
