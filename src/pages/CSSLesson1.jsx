@@ -12,9 +12,9 @@ const CSSLesson1 = () => {
         income coding!
       </p>
       <div className="video__frame">
-      <video className="video" controls  id="video">
+      {/* <video className="video" controls  id="video">
             <source src={CSS1} type="video/mp4" />
-          </video>
+          </video> */}
       </div>
       <a className="btn__wrapper" href="/section-2/lesson-2">
         <button className="next__lesson--btn">Proceed to Lesson 2</button>

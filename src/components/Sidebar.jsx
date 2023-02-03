@@ -8,21 +8,31 @@ import items from "../data/sidebar.json";
 const Sidebar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
+  const handleAnimation = () => {
+    if (sidebarOpen) {
+      document.querySelector('.sidebar').style.animation = "reversesideAnimation 2s "
+      setSidebarOpen(false)
+    }
+  }
+
   return (
     <>
-    <i onClick={() => setSidebarOpen(!sidebarOpen)} className="bi-list"></i>
-    {sidebarOpen &&
-    <div className="sidebar">
-    <div className="title__wrapper">
-      <h1 className="course__title">ROADMAP</h1>
-    </div>
+      {sidebarOpen ? (
+                <i onClick={() => handleAnimation()} className="bi-x-lg"></i>
+      ) : (
+        <i onClick={() => setSidebarOpen(!sidebarOpen)} className="bi-list"></i>
+      )}
+      {sidebarOpen && (
+        <div className="sidebar">
+          <div className="title__wrapper">
+            <a href="/" className="course__title">ROADMAP</a>
+          </div>
 
-    {items.map((item, index) => (
-      <SidebarItem key={index} item={item} />
-    ))}
-  </div>
-    }
-      
+          {items.map((item, index) => (
+            <SidebarItem key={index} item={item} />
+          ))}
+        </div>
+      )}
     </>
   );
 };

@@ -6,7 +6,6 @@ import FreedomLogo from "../assets/freedom.svg";
 import BusinessLogo from "../assets/business.svg";
 import LearningLogo from "../assets/learning.svg";
 import Footer from '../components/Footer'
-import Bg from '../assets/homebg.png'
 
 const Home = ({ darkMode }) => {
 
