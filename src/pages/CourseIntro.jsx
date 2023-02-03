@@ -1,7 +1,7 @@
 import React from "react";
 import "./CourseIntro.css";
-import Intro from "../assets/INTRO.mp4";
-import { Player } from "video-react";
+// import Intro from "../assets/INTRO.mp4";
+// import { Player } from "video-react";
 
 const CourseIntro = () => {
   return (
@@ -17,9 +17,9 @@ const CourseIntro = () => {
           in no time. Watch the following video to begin the course!
         </p>
         <div className="video__frame">
-          <video className="video" controls id="video">
+          {/* <video className="video" controls id="video">
             <source src={Intro} type="video/mp4" />
-          </video>
+          </video> */}
         </div>
         <a className="btn__wrapper" href="/section-1/lesson-1">
           <button className="next__lesson--btn">

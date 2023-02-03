@@ -10,9 +10,9 @@ const CSSLesson2 = () => {
        Let's practice what you just learn't about CSS and get you creating your first profile page!
       </p>
       <div className="video__frame">
-      <video className="video" controls  id="video">
+      {/* <video className="video" controls  id="video">
             <source src={CSS2} type="video/mp4" />
-          </video>
+          </video> */}
       </div>
       <a className="btn__wrapper" href="/section-2/lesson-3">
         <button className="next__lesson--btn">Proceed to Lesson 3</button>

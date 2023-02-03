@@ -61,8 +61,8 @@ label {
 }
 
 .form__submit {
-    border: 2px solid gold;
-    background: gold;
+    border: 2px solid #FF3B3F;
+    background: #FF3B3F;
     color: #fff;
     font-weight: bold;
     max-width: 240px;
@@ -75,13 +75,14 @@ label {
 }
 
 .form__submit:hover {
-    border-color: #fff;
+    border-color: #FF3B3F;
     background-color: transparent;
+    color: #FF3B3F;
 }
 
 .form__submit:active {
-    border-color: gold;
-    color: #E40C2B;
+    border-color: #FF3B3F;
+    color: #FF3B3F;
 }
 
 .wave {

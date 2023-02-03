@@ -10,9 +10,9 @@ const CSSLesson3 = () => {
         Now you will create your very first E-Portfolio. This is a huge milestone in your development journey and you can use this project when applying for jobs!
       </p>
       <div className="video__frame">
-      <video className="video" controls id="video">
+      {/* <video className="video" controls id="video">
             <source src={CSS3} type="video/mp4" />
-          </video>
+          </video> */}
       </div>
       <a className="btn__wrapper" href="/section-2/lesson-4">
         <button className="next__lesson--btn">Proceed to Lesson 4</button>

@@ -1,9 +1,10 @@
 .course__intro {
-  width: 100%;
+  width: 80%;
   min-height: 80vh;
   display: flex;
   padding: 20px 12px;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .course__intro--title {

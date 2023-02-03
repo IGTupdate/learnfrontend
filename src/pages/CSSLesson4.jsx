@@ -12,9 +12,9 @@ const CSSLesson4 = () => {
       </p>
       <a href={EmailTemplate} target="_blank" className="asset">Email Template</a>
       <div className="video__frame">
-      <video className="video" controls id="video">
+      {/* <video className="video" controls id="video">
             <source src={MakeMoney} type="video/mp4" />
-          </video>
+          </video> */}
       </div>
       <a className="btn__wrapper" href="/section-3/lesson-1">
         <button className="next__lesson--btn">Proceed to Section 3: JavaScript</button>

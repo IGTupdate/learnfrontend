@@ -11,9 +11,9 @@ const CourseLesson3 = () => {
         far, if you still feel lost don't worry, practice makes perfect.
       </p>
       <div className="video__frame">
-      <video className="video" controls id="video">
+      {/* <video className="video" controls id="video">
             <source src={HTML3} type="video/mp4" />
-          </video>
+          </video> */}
       </div>
       <a className="btn__wrapper" href="/section-2/lesson-1">
         <button className="next__lesson--btn">Proceed to Section 2: CSS</button>
