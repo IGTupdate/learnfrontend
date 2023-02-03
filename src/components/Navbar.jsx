@@ -36,7 +36,7 @@ const Navbar = ({ darkMode, toggleTheme }) => {
                 className="pencil__img"
                 src="https://www.freeiconspng.com/thumbs/pencil-png/black-pencil-png-black-pencil-vector-8.png"
               />
-              LearnFrontend
+              Learn<span className="gold">Frontend</span> 
             </figure>
           </a>
 
@@ -58,9 +58,7 @@ const Navbar = ({ darkMode, toggleTheme }) => {
               </figure>
 
               <figure className="top__nav--link--wrapper">
-                <button onClick={toggleTheme} className="dark__mode--toggle">
-                  <Brightness6Icon className="dark__mode--icon" />
-                </button>
+                
               </figure>
             </div>
           ) : (
