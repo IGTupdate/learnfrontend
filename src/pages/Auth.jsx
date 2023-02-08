@@ -51,16 +51,12 @@ const Auth = () => {
             />
           </div>
 
-         
-
           <button id="form__submit" className="form__submit">
             Sign Up
           </button>
          
         </div>
-{modal &&
-  <PlanScreen modal={modal} setModal={setModal} />
-}
+
 
         
         <div className="form__right">
@@ -73,6 +69,9 @@ const Auth = () => {
           </p>
         </div>
       </form>
+      {modal &&
+  <PlanScreen modal={modal} setModal={setModal} />
+}
       <div className="premium__wrapper">
       <h1 className="or">Want full access to the course?</h1>
           <button onClick={() => setModal(!modal)} className="premium__btn">

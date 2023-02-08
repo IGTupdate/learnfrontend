@@ -7,19 +7,40 @@ import {
   onAuthStateChanged,
 } from "firebase/auth";
 import { setDoc, doc } from "firebase/firestore";
+import { createCheckoutSession } from "../stripe/createCheckoutSession";
+import usePremiumStatus from "../stripe/usePremiumStatus";
 
 const AuthContext = createContext();
 
 export function AuthContextProvider({ children }) {
   const [user, setUser] = useState({});
 
-  function signUp(email, password) {
-    createUserWithEmailAndPassword(auth, email, password);
-    setDoc(doc(db, "users", email), {
-      isSubscribed: false,
-      firstName: '',
-      lastName: '',
+  const userIsPremium = usePremiumStatus(user);
+
+  function signUp(email, password, firstName, lastName, for_premium) {
+    createUserWithEmailAndPassword(auth, email, password).then((userCredential) => {
+      // Signed in 
+      const user = userCredential.user;
+      // ...
+      const dfsd= setDoc(doc(db, "users", user.uid), {
+        uid: user.uid,
+        isSubscribed: false,
+        email: email,
+        firstName: (firstName) ? firstName : '',
+        lastName: (lastName) ? lastName : '',
+      });
+
+      if(for_premium == 1 ){
+        createCheckoutSession(user.uid);
+      }
+      
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      // ..
     });
+    
   }
 
   function logOut() {
@@ -38,9 +59,9 @@ export function AuthContextProvider({ children }) {
       unsubscribe();
     };
   });
-
+  
   return (
-    <AuthContext.Provider value={{ signUp, logIn, logOut, user }}>
+    <AuthContext.Provider value={{ signUp, logIn, logOut, user, userIsPremium }}>
       {children}
     </AuthContext.Provider>
   );
