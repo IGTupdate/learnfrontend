@@ -22,7 +22,6 @@ const Navbar = ({ darkMode, toggleTheme }) => {
     }
   }
 
-
   
 
 

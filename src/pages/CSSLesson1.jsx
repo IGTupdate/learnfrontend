@@ -1,6 +1,6 @@
 import React from "react";
 import "./CourseLesson.css";
-import CSS1 from '../assets/CSS1.mp4'
+// import CSS1 from '../assets/CSS1.mp4'
 
 const CSSLesson1 = () => {
   return (

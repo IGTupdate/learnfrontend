@@ -1,6 +1,6 @@
 import React from "react";
 import "./CourseLesson.css";
-import HTML1 from '../assets/HTML1.mp4'
+// import HTML1 from '../assets/HTML1.mp4'
 
 const CourseLesson = () => {
   return (
